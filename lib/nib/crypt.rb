@@ -1,0 +1,1 @@
+require 'nib/crypt/version'

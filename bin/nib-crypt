@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+command :'crypt' do |c|
+  c.action do |_global_options, _options, _args|
+    warn 'not yet implemented'
+    puts 'nib-crypt crypt init called'
+  end
+end
+
+command :encrypt do |c|
+  c.action do |_global_options, _options, _args|
+    warn 'not yet implemented'
+    puts 'nib-crypt encrypt called'
+  end
+end
+
+command :decrypt do |c|
+  c.action do |_global_options, _options, _args|
+    warn 'not yet implemented'
+    puts 'nib-crypt decrypt called'
+  end
+end

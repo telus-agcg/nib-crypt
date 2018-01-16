@@ -26,5 +26,3 @@ command :decrypt do |c|
     Nib::Crypt.decrypt(*args)
   end
 end
-
-exit run(ARGV)

@@ -26,14 +26,14 @@ export NIB_CRYPT_BUCKENT_NAME=secrets-r-us
 
 ## Usage
 
-`nib-crypt` expects a file name `secrets.aes` to be present in the current directory (typically the root of a project). If this file does not exists the `init` command can be used to create one or pull an existing one from AWS S3 if one exists for the project.
+`nib-crypt` expects a file name `secrets.aes` to be present in the current directory (typically the root of a project). If this file does not exists the `crypt-init` command can be used to create one or pull an existing one from AWS S3 if one exists for the project.
 
 ### Initialize a project
 
 This command will check to see if a key exists for the current project (stored as `projectname.secrets.aes` on AWS S3). If a key exists it will be copied down from AWS S3. If a key does not yet exist a new one will be created and pushed to the configured bucket on AWS S3.
 
 ```sh
-nib crypt init
+nib crypt-init
 ```
 
 ### Encrypt a file

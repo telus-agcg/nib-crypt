@@ -26,6 +26,7 @@ module Nib
           -in #{input} \
           -out #{output} \
           -#{direction} \
+          -md md5 \
           -aes256 \
           -pass file:#{DEFAULT_KEY_NAME}
       SCRIPT

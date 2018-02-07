@@ -21,7 +21,7 @@ gem install nib-crypt
 
 ```sh
 # .bashrc or .zshenv etc
-export NIB_CRYPT_BUCKENT_NAME=secrets-r-us
+export NIB_CRYPT_BUCKET_NAME=secrets-r-us
 ```
 
 ## Usage

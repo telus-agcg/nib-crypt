@@ -28,13 +28,13 @@ module Nib
       end
 
       def bucket
-        ENV.fetch('NIB_CRYPT_BUCKENT_NAME') { raise MissingBucketError }
+        ENV.fetch('NIB_CRYPT_BUCKET_NAME') { raise MissingBucketError }
       end
 
       class MissingBucketError < StandardError
         def message
           <<-ERROR.tr("\n", '').gsub(/\s+/, ' ')
-            Please provide a bucket via the `NIB_CRYPT_BUCKENT_NAME`
+            Please provide a bucket via the `NIB_CRYPT_BUCKET_NAME`
             environment variable
           ERROR
         end
